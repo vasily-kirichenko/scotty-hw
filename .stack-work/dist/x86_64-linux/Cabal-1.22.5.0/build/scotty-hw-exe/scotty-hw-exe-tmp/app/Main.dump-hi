@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2016-09-07 07:17:55.752175 UTC
+2016-09-07 11:14:34.360332 UTC
 
 interface main@main:Main 7103
-  interface hash: cfad2560c7b9bf135a1881f497a74b14
-  ABI hash: 188ee0bdae2ad2f50f9af841b47c39d7
-  export-list hash: 1772d461b4977f0cadca3af50d1401f9
+  interface hash: b54b90c89db7c8e63074aec95d2ef7b4
+  ABI hash: cf9c4b66f30faf8cdfd58eb3ec5cd1a0
+  export-list hash: d631a95a400430136ec42723710a1592
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 9d988a6df81fe32013fbadb104945374
   sig of: Nothing
@@ -43,6 +43,7 @@ package dependencies: aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb
                       monad-control-1.0.1.0@monad_7Tqv3C2ASZP4J7swGaIkqS
                       mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
                       network-2.6.3.1@netwo_4FL8hbDqfKm3Q9HV1QK1xw
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
                       primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
                       psqueues-0.2.2.2@psque_DpbyjBBm64hEDzSlDfS35I
                       random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
@@ -51,8 +52,8 @@ package dependencies: aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb
                       regex-compat-0.95.1@regex_EyUO1k1s8YNJ81jSdgVW1z
                       resourcet-1.1.7.5@resou_165wgeXO1n8BEqynSK393U
                       scientific-0.3.4.9@scien_1WVNjGUftkQ9QzH4DOM2n1
+                      scotty-hw-0.1.0.0@scott_2RcvmQRgYux92S8CqaavzQ
                       scotty-0.11.0@scott_9HKU7K3rbuY2CyHkynMO0j
-                      scotty-hw-0.1.0.0@scott_AAda9l9O4s31vCCYG5NIZY
                       semigroups-0.18.1@semig_LaeT7FLzCl4KIQUoVrPYl1
                       simple-sendfile-0.2.25@simpl_HkPL9dsGEXvJehTjaTDejw
                       stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD
@@ -110,6 +111,7 @@ family instance modules: attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.A
                          iproute-1.7.0@iprou_EmwGKuwHXxo93hguRyGitY:Data.IP.Addr
                          iproute-1.7.0@iprou_EmwGKuwHXxo93hguRyGitY:Data.IP.Range
                          monad-control-1.0.1.0@monad_7Tqv3C2ASZP4J7swGaIkqS:Control.Monad.Trans.Control
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
                          primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
                          resourcet-1.1.7.5@resou_165wgeXO1n8BEqynSK393U:Control.Monad.Trans.Resource.Internal
                          scotty-0.11.0@scott_9HKU7K3rbuY2CyHkynMO0j:Web.Scotty.Internal.Types
@@ -126,17 +128,47 @@ family instance modules: attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.A
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Storable
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed.Base
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  scotty-hw-0.1.0.0@scott_AAda9l9O4s31vCCYG5NIZY:Lib 3fe16096a17bcc555f59b78d7c157eba
-43da67da9c4dce54435d660e1013ef30
+import  -/  scotty-hw-0.1.0.0@scott_2RcvmQRgYux92S8CqaavzQ:Lib 0ae1507dd0aed3279c085fdd39d42b01
+d29c5679bf60266760c2ffe2f40252ca
   main :: GHC.Types.IO ()
-  {- Unfolding: InlineRule (0, True, True) Lib.run -}
-11fdeb36c57299f9424797cc4c80597b
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+e5461a2161ea965c1140f6540cfcb1b3
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1, Unfolding: (GHC.TopHandler.runMainIO1 @ () Lib.run) -}
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main3
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main2
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 Lib.run `cast` (GHC.Types.NTCo:IO[0] <()>_R) ipv2 } }) -}
+e0783024a53b101ae02cbf9c0956196a
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " World"#) -}
+3e85b533e378f01a8b00d4bf0074334c
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Hello"#) -}
+a8524c25151be0f1da3ea624f62495b6
+  main4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/kot/github/scotty-hw/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/bin"
-libdir     = "/home/kot/github/scotty-hw/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/lib/x86_64-linux-ghc-7.10.3/scotty-hw-0.1.0.0-AAda9l9O4s31vCCYG5NIZY"
+libdir     = "/home/kot/github/scotty-hw/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/lib/x86_64-linux-ghc-7.10.3/scotty-hw-0.1.0.0-2RcvmQRgYux92S8CqaavzQ"
 datadir    = "/home/kot/github/scotty-hw/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/share/x86_64-linux-ghc-7.10.3/scotty-hw-0.1.0.0"
 libexecdir = "/home/kot/github/scotty-hw/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/libexec"
 sysconfdir = "/home/kot/github/scotty-hw/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/etc"
